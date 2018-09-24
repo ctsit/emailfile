@@ -30,9 +30,11 @@ func main() {
 
 	if len(os.Args) < 3 || from == "" || srv == "" {
 		fmt.Println("USAGE: emailfile SUBJECT FILE TO [TO...] <MESSAGE")
+		fmt.Println("\nEmail a file.")
 		fmt.Println("\nEnvironment Variables")
 		fmt.Println("\tSMTP_FROM: no-reply email address used to send emails")
 		fmt.Println("\tSMTP_HOST: SMTP hostname")
+		fmt.Println("\nWebsite: https://github.com/ufl-taeber/emailfile")
 		os.Exit(2)
 	}
 
